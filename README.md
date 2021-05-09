@@ -26,6 +26,9 @@ _theme_ import and view the output generated Css.
 node-sass source/app.scss dest/app.css
 ```
 
+[Sample Output](https://github.com/themounthead/nativescript-ngx-themr/blob/main/dest/app.css)
+
+
 ## Examples
 
 The Project contains a sample demo, along with several sample Theme files
