@@ -22,7 +22,9 @@ or simply create custom Css classes by extending the variables.
 Run the below command providing your main input Sass/Scss file, after including the
 _theme_ import and view the output generated Css.
 
-``` node-sass source/app.scss dest/app.css
+``` 
+node-sass source/app.scss dest/app.css
+```
 
 ## Examples
 
