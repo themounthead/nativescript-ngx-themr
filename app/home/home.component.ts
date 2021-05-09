@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { Theme } from '@nativescript/theme';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -18,6 +20,7 @@ export class HomeComponent {
   }
 
   public onTap() {
-    this.counter--;
+    Theme.toggleMode();
+    // this.counter--;
   }
 }

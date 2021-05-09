@@ -1,6 +1,9 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<StackLayout>
+<ActionBar height="0"></ActionBar>
+<StackLayout class="page" padding="50">
   <Label text="Tap the button"></Label>
-  <Button text="TAP" (tap)="onTap()"></Button>
+  <Button text="TAP" (tap)="onTap()" class="primary"></Button>
+  <Button text="TAP" (tap)="onTap()" class="secondary"></Button>
+  <Button text="TAP" (tap)="onTap()" class="tertiary"></Button>
   <Label [text]="getMessage()" textWrap="true"></Label>
 </StackLayout>

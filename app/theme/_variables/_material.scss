@@ -1,0 +1,77 @@
+
+// $app-theme-type: mat-typography-config($font-family:   'Lato, Montserrat, Roboto, sans-serif',
+// $display-4:     mat-typography-level(112px, 112px, 300),
+// $display-3:     mat-typography-level(56px, 56px, 400),
+// $display-2:     mat-typography-level(45px, 48px, 400),
+// $display-1:     mat-typography-level(34px, 40px, 400),
+// $headline:      mat-typography-level(24px, 32px, 400),
+// $title:         mat-typography-level(20px, 32px, 500),
+// $subheading-2:  mat-typography-level(16px, 20px, 400),
+// $subheading-1:  mat-typography-level(15px, 20px, 400),
+// $body-2:        mat-typography-level(14px, 20px, 500),
+// $body-1:        mat-typography-level(13px, 20px, 400),
+// $caption:       mat-typography-level(13px, 20px, 400),
+// $button:        mat-typography-level(13px, 14px, 500),
+// $input:         mat-typography-level(inherit, 1.125, 400));
+
+// $mat-menu-typography: mat-typography-config($subheading-2: mat-typography-level(12px, 20px, 400));
+
+// @include mat-core($app-theme-type);
+// @include mat-menu-typography($mat-menu-typography);
+
+$app-theme-primary-color-palette: '';
+$app-theme-primary-accent-palette: '';
+
+$app-theme-secondary-color-palette: '';
+$app-theme-secondary-accent-palette: '';
+
+$app-theme-tertiary-color-palette: '';
+$app-theme-tertiary-accent-palette: '';
+
+$app-theme-warn-palette: mat-palette($mat-red);
+$app-theme-inactive-palette: mat-palette($mat-gray);
+
+$app-theme: '';
+
+$app-theme-primary-color-palette: mat-palette($_theme-primary-color, $_theme-primary-color-base, $_theme-primary-color-light, $_theme-primary-color-heavy);
+$app-theme-primary-accent-palette: mat-palette($_theme-primary-accent, $_theme-primary-accent-base, $_theme-primary-accent-light, $_theme-primary-accent-heavy);
+
+$app-theme-secondary-color-palette: mat-palette($_theme-secondary-color, $_theme-secondary-color-base, $_theme-secondary-color-light, $_theme-secondary-color-heavy);
+$app-theme-secondary-accent-palette: mat-palette($_theme-secondary-accent, $_theme-secondary-accent-base, $_theme-secondary-accent-light, $_theme-secondary-accent-heavy);
+
+$app-theme-tertiary-color-palette: mat-palette($_theme-tertiary-color, $_theme-tertiary-color-base, $_theme-tertiary-color-light, $_theme-tertiary-color-heavy);
+$app-theme-tertiary-accent-palette: mat-palette($_theme-tertiary-accent, $_theme-tertiary-accent-base, $_theme-tertiary-accent-light, $_theme-tertiary-accent-heavy);
+
+$app-theme-surface-color-palette: mat-palette($_theme-surface-color, $_theme-surface-color-base, $_theme-surface-color-light, $_theme-surface-color-heavy);
+
+@if($_is-dark-theme) {
+  $app-theme: mat-dark-theme($app-theme-primary-color-palette, $app-theme-primary-accent-palette, $app-theme-warn-palette, $app-theme-inactive-palette);
+}
+@else {
+  $app-theme: mat-light-theme($app-theme-primary-color-palette, $app-theme-primary-accent-palette, $app-theme-warn-palette, $app-theme-inactive-palette);
+}
+
+$app-theme-primary-color: mat-color($app-theme-primary-color-palette);
+$app-theme-primary-accent: mat-color($app-theme-primary-accent-palette);
+
+$app-theme-secondary-color: mat-color($app-theme-secondary-color-palette);
+$app-theme-secondary-accent: mat-color($app-theme-secondary-accent-palette);
+
+$app-theme-tertiary-color: mat-color($app-theme-tertiary-color-palette);
+$app-theme-tertiary-accent: mat-color($app-theme-tertiary-accent-palette);
+
+$app-theme-surface-color: mat-color($app-theme-surface-color-palette);
+
+// @include angular-material-theme($app-theme);
+
+// moved to app.scss
+// @import 'style/custom';
+// @import 'layout-container';
+
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+
+

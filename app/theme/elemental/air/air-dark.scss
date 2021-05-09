@@ -1,0 +1,41 @@
+@import '../../_variables/theming';
+
+$_is-dark-theme: true;
+
+$_theme-primary-color: $mat-grey;
+$_theme-primary-color-base: 800;
+$_theme-primary-color-light: 600;
+$_theme-primary-color-heavy: 900;
+
+$_theme-primary-accent: $mat-blue-grey;
+$_theme-primary-accent-base: A200;
+$_theme-primary-accent-light: A100;
+$_theme-primary-accent-heavy: A700;
+
+$_theme-secondary-color: $mat-blue-grey;
+$_theme-secondary-color-base: 600;
+$_theme-secondary-color-light: 500;
+$_theme-secondary-color-heavy: 900;
+
+$_theme-secondary-accent: $mat-grey;
+$_theme-secondary-accent-base: A100;
+$_theme-secondary-accent-light: A400;
+$_theme-secondary-accent-heavy: A700;
+
+$_theme-tertiary-color: $mat-blue-grey;
+$_theme-tertiary-color-base: 500;
+$_theme-tertiary-color-light: 400;
+$_theme-tertiary-color-heavy: 800;
+
+$_theme-tertiary-accent: $mat-grey;
+$_theme-tertiary-accent-base: A100;
+$_theme-tertiary-accent-light: A400;
+$_theme-tertiary-accent-heavy: A700;
+
+$_theme-surface-color: $mat-gray;
+$_theme-surface-color-base: 800;
+$_theme-surface-color-light: 100;
+$_theme-surface-color-heavy: 900;
+
+@import '../../_variables/material';
+@import '../../_variables/root';

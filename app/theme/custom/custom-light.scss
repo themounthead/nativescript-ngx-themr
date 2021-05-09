@@ -1,0 +1,41 @@
+@import '../_variables/theming';
+
+$_is-dark-theme: false;
+
+$_theme-primary-color: $mat-indigo;
+$_theme-primary-color-base: 600;
+$_theme-primary-color-light: 100;
+$_theme-primary-color-heavy: 800;
+
+$_theme-primary-accent: $mat-purple;
+$_theme-primary-accent-base: 500;
+$_theme-primary-accent-light: 300;
+$_theme-primary-accent-heavy: 800;
+
+$_theme-secondary-color: $mat-yellow;
+$_theme-secondary-color-base: 700;
+$_theme-secondary-color-light: 400;
+$_theme-secondary-color-heavy: 900;
+
+$_theme-secondary-accent: $mat-red;
+$_theme-secondary-accent-base: 300;
+$_theme-secondary-accent-light: 100;
+$_theme-secondary-accent-heavy: 600;
+
+$_theme-tertiary-color: $mat-gray;
+$_theme-tertiary-color-base: A100;
+$_theme-tertiary-color-light: A100;
+$_theme-tertiary-color-heavy: 400;
+
+$_theme-tertiary-accent: $mat-blue-gray;
+$_theme-tertiary-accent-base: 100;
+$_theme-tertiary-accent-light: 50;
+$_theme-tertiary-accent-heavy: 600;
+
+$_theme-surface-color: $mat-gray;
+$_theme-surface-color-base: A100;
+$_theme-surface-color-light: 100;
+$_theme-surface-color-heavy: 600;
+
+@import '../_variables/material';
+@import '../_variables/root';
